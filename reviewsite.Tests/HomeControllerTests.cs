@@ -3,19 +3,20 @@ using reviewsite.Controllers;
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
+using Microsoft.AspNetCore.Mvc;
 
 namespace reviewsite.Tests
 {
     public class HomeControllerTests
     {
         [Fact]
-        public void Index_Returns_Hello_World()
+        public void Index_Returns_A_View()
         {
             var underTest = new HomeController();
 
             var result = underTest.Index();
 
-            Assert.Equal("Hello world!", result);
+            Assert.IsType<ViewResult>(result);
         }
     }
 }
