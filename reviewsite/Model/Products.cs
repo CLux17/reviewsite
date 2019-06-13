@@ -11,20 +11,18 @@ namespace reviewsite.Model
         {
             public int Id;
             public string Name;
-            public string Species;
-            public string PetType;
-            public int Boredom;
+            public string Category;
 
-            public Product(id, namespace,)
+
+            public Product(int id, string name, string category)
             {
                 Id = id;
                 Name = name;
-                Species = species;
-                Boredom = 50;
+                Category = category;
             }
         }
 
-        //I'd, name, image, description, 1 review, timestamps, category
+        Dictionary <int, string> products;
 
-        }
     }
+}
