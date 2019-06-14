@@ -1,4 +1,4 @@
-﻿@model
+﻿@model IEnumerable<reviewsite.Model.Product>
 
 
 @{
@@ -14,13 +14,18 @@
 </head>
 <body>
     <h1>Welcome to Team A review site!!!</h1>
-    <p>Enjoy your stay.</p>
-    <h2>Cold Brew Coffee</h2>
-    <h2>Energy Drink</h2>
-    <h2>High Heels Jimmy Choo</h2>
-    <h2>Nike Air Max 90's OFF-WHITE edition</h2>
-    <p>
-        I'd, name, image, description, 1 review, timestamps, category
-    </p>
+    
+
+    <h2>Product List</h2>
+    @foreach (var product in Model)
+    {
+        <p><h3>Product:</h3> <span>@product.Name</span> </p>
+        <p><h3>Category:</h3> <span>@product.Category</span></p>
+        <p><h3>Description:</h3> <span>@product.Description</span></p>
+        <h3>Reviews</h3>
+        <p><span>@product.Review</span></p>
+        <hr />
+    }
+    
 </body>
 </html>
