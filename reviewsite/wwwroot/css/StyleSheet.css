@@ -1,0 +1,17 @@
+﻿*{
+    background-color: aqua;    
+}
+h1{
+    font-size: 20px;
+    padding: 2em 2em;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+}
+h2{
+    font-size: 16px;
+    padding:1em 1em;
+    background-color: hotpink;
+    border-radius: 60%;
+}
