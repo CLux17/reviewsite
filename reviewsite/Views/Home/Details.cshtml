@@ -1,4 +1,6 @@
-﻿
+﻿@model reviewsite.Model.Product
+
+
 @{
     Layout = null;
 }
@@ -8,23 +10,23 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>ShockEnergy</title>
+    <title>Details</title>
 </head>
 <body>
     <header>
-        <h1></h1>
-        <section>
-            <span></span>
+        <h1>@Model.Name </h1>
+        <section id="offWhite">
+            <span><strong>@Model.Name</strong></span>
         </section>
     </header>
     <main>
-        <section>
+        <section id="airMax">
             <img src="#" alt="Alternate Text" />
             <p></p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>@Model.Description</li>
+                <li>@Model.Category</li>
+                <li>@Model.Review</li>
             </ul>
         </section>
     </main>

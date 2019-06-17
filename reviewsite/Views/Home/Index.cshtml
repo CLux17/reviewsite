@@ -17,15 +17,20 @@
     
 
     <h2>Product List</h2>
+
+
+
     @foreach (var product in Model)
-    {
-        <p><h3>Product:</h3> <span>@product.Name</span> </p>
+     {
+    <a href="Home/Details/@product.Id">@product.Name</a>
+
+        @*<p><h3>Product:</h3> <span>@product.Name</span> </p>
         <p><h3>Category:</h3> <span>@product.Category</span></p>
         <p><h3>Description:</h3> <span>@product.Description</span></p>
         <h3>Reviews</h3>
-        <p><span>@product.Review</span></p>
+        <p><span>@product.Review</span></p>*@
         <hr />
-    }
+     }
     
 </body>
 </html>
