@@ -26,14 +26,14 @@ namespace reviewsite.Repositories
                 " run a half size smaller. The upper's are wonderfully designed, the lower portion in my eye's is where they" +
                 " really shine at. As with all of his Off-White creations as of late, the added print is very reminiscent of" +
                 " Andy Warhol, and I dig it. As far as paying retail for these shoes, they are awesome, but I wouldn't " +
-                "recommend paying resale pricing unless you are okay with wearing shoes that near the thousand dollar mark."),
+                "recommend paying resale pricing unless you are okay with wearing shoes that near the thousand dollar mark.", "image.jpg"),
                 new Product(2, "High Heels Jimmy Choo", "Shoes", "Aveline in black. Exquisite, extravagant and the epitome" +
                 " of elegance, this special occasion style hosts oversized bold crinoline bows to offer a 'same but" +
                 " different' look on each pump. The bows are intricately woven, hand tied and sewn on for a dramatic " +
                 "finish ", "The shoe is as beautiful as it looks on the site. It's does run small so, " +
                 "I would recommend a 1/2 size up. As long as you're used to wearing heels they are " +
                 "good for an all night wear. Perfect for a dramatic night on the town " +
-                "or an elegant night out. Would I recommend this shoe? Absolutely!"),
+                "or an elegant night out. Would I recommend this shoe? Absolutely!", "Jimmy-white.jpeg"),
                 new Product(3, "Cold Brew Coffee", "Drinks", "Coffee was first brought to the country of Brazil, by a man " +
                 "named Francisco de Melo Palheta, in 1727. He planted the first coffee tree in the state of Para and it " +
                 "thrived and made a easy transition to Rio de Janeiro by 1770. There are two types of beans that are used" +
@@ -43,12 +43,12 @@ namespace reviewsite.Repositories
                 "80%. Brazil as a country has a annual production rate of 7.9 billion pounds, as of 2018 records. America" +
                 " is the leading country of coffee consumption at 400 million cup's per day. At this rate, coffee is not " +
                 "going anywhere but up, in the United States anytime soon.", "Coffee? yes. Iced or Cold brew coffee? " +
-                "Even better. This stuff right here? The best there is, hands down, nothing else wakes me up faster than this."),
+                "Even better. This stuff right here? The best there is, hands down, nothing else wakes me up faster than this.", "coffee.jpg"),
                 new Product(4, "Shock Energy Drink", "Drinks", "It's known as one of the best tasting energy drinks on " +
                 "the market, with a unique flavor unlike any of its competitors. Contains 260 mg of caffeine per can, " +
                 "higher than the caffeine content in a Red Bull, Rockstar, or Monster. Also offered in a variety of a" +
                 " few flavors including citrus, grape, and loaded cherry", "Feel it withing 15 minutes of drinkning it, " +
-                "fantastic for body building and tastes GREAT!!!!")
+                "fantastic for body building and tastes GREAT!!!!", "XtremeShock.png")
             };
         }
 
