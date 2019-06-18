@@ -16,11 +16,8 @@
 <body>
     <h1>Welcome to Team A review site!!!</h1>
     
-
     <h2>Product List</h2>
-
-
-
+       
     @foreach (var product in Model)
      {
     <a href="Home/Details/@product.Id">@product.Name</a>
