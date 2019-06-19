@@ -11,17 +11,19 @@ namespace reviewsite.Model
         public string Name { get; set; }
         public string Category { get; set; }
         public string Description { get; set; }
-        public string Review { get; set; }
         public string Image { get; set; }
+        public int CategoryId { get; set; }
 
-        public Product(int id, string name, string category, string description, string review, string image)
+        public Review Review { get; set; }
+
+        public Product(int id, string name, string category, string description, string image)
         {
             Id = id;
             Name = name;
             Category = category;
             Description = description;
-            Review = review;
             Image = image;
+           
         }
 
 
