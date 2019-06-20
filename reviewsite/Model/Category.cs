@@ -11,6 +11,6 @@ namespace reviewsite.Model
         public string Name { get; set; }
 
         //public Product Product { get; set; }
-        public Review Review { get; set; }
+       
     }
 }
