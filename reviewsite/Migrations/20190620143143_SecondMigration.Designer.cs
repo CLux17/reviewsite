@@ -9,14 +9,14 @@ using reviewsite;
 namespace reviewsite.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20190619192227_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20190620143143_SecondMigration")]
+    partial class SecondMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
+                .HasAnnotation("ProductVersion", "2.1.8-servicing-32085")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -33,19 +33,13 @@ namespace reviewsite.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("reviewsite.Model.Product", b =>
+            modelBuilder.Entity("reviewsite.Model.Review", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Category");
-
                     b.Property<int>("CategoryId");
-
-                    b.Property<string>("Description");
-
-                    b.Property<string>("Image");
 
                     b.Property<string>("Name");
 
@@ -54,40 +48,14 @@ namespace reviewsite.Migrations
                     b.HasIndex("CategoryId")
                         .IsUnique();
 
-                    b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("reviewsite.Model.Review", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name");
-
-                    b.Property<int>("ProductId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId")
-                        .IsUnique();
-
                     b.ToTable("Reviews");
                 });
 
-            modelBuilder.Entity("reviewsite.Model.Product", b =>
-                {
-                    b.HasOne("reviewsite.Model.Category")
-                        .WithOne("Product")
-                        .HasForeignKey("reviewsite.Model.Product", "CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("reviewsite.Model.Review", b =>
                 {
-                    b.HasOne("reviewsite.Model.Product")
+                    b.HasOne("reviewsite.Model.Category")
                         .WithOne("Review")
-                        .HasForeignKey("reviewsite.Model.Review", "ProductId")
+                        .HasForeignKey("reviewsite.Model.Review", "CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
