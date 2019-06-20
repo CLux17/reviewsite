@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace reviewsite
 {
-    public class SchoolContext : DbContext
+    public class SiteContext : DbContext
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
@@ -24,6 +24,7 @@ namespace reviewsite
 
             base.OnConfiguring(optionsBuilder);
         }
+
 
     }
 }
