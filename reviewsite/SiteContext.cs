@@ -25,20 +25,21 @@ namespace reviewsite
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
-                new Category
+                new Category()
                 {
                     Id = 1,
                     Name = "Shoes",
                     
                 },
-                new Category
+                new Category()
                 {
                     Id=2,
                     Name="Drinks",
                 }
             );
             modelBuilder.Entity<Review>().HasData(
-                new Review {
+                new Review()
+                {
                     Id = 1,
                     Name = "Nike Air Max 90's OFF-WHITE edition",
                     Content = 
@@ -47,7 +48,7 @@ namespace reviewsite
                 },
 
 
-                new Review
+                new Review()
                     {
                     Id = 2,
                     Name = "High Heels Jimmy Choo",
@@ -56,7 +57,7 @@ namespace reviewsite
                     CategoryId = 1
                 },
 
-                new Review
+                new Review()
                 {
                     Id = 3,
                     Name = "Cold Brew Coffee",
@@ -64,7 +65,7 @@ namespace reviewsite
                     CategoryId = 2
                 },
 
-                new Review
+                new Review()
                 {
                     Id = 4,
                     Name = "Shock Energy Drink",
