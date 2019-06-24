@@ -1,11 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿@model reviewsite.Model.Product
 
-namespace reviewsite.Views.Category
-{
-    public class Details
-    {
-    }
+
+@{
+    Layout = null;
 }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/CSS/StyleSheet.css">
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    @foreach (var product in Model)
+    <header>
+        <h1>@Model.Name </h1>
+        <section id="offWhite">
+            <span><strong>@Model.Name</strong></span>
+        </section>
+    </header>
+    <main>
+        <section id="airMax">
+            <img src="~/images/@Model.Image" alt="Alternate Text" />
+            <p></p>
+            <ul>
+                <li>@Model.Category</li>
+                <li>@Model.Description</li>
+            </ul>
+            <hr />
+            <p>@Model.Review</p>
+            @*This needs to be product but it errored out and I don't want to get into that over the weekend'*@
+        </section>
+    </main>
+</body>
+</html>
