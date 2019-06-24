@@ -28,9 +28,13 @@
                 <li>@Model.Category.Name</li>
                 <li>@Model.Description</li>
             </ul>
-            <hr/>
-            <p>@Model.Review</p>
-            @*This needs to be product but it errored out and I don't want to get into that over the weekend'*@
+            <hr />
+            <h2>Review List</h2>
+            @foreach (var review in Model.Reviews)
+            {
+                @review.Content
+                <hr />
+            }
         </section>
     </main>
 </body>

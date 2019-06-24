@@ -40,9 +40,6 @@ namespace reviewsite
                     name: "default",
                     template: "{controller=Category}/{action=Index}/{id?}");
                        
-                //routes.MapRoute(
-                //    name: "product",
-                //    template: "{controller=Product}/{action=Index}/{id?}");
             });
         }
     }
