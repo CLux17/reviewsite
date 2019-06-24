@@ -24,9 +24,9 @@ namespace reviewsite.Repositories
             return db.Products.ToList();
         }
 
-        public Product GetById(int id)
+        public Product GetById(int categoryid)
         {
-            return db.Products.Single(c => c.Id == id);
+            return db.Products.Single(c => c.Id == categoryid);
         }
 
 
