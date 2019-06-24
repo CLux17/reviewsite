@@ -24,6 +24,7 @@
         <h1>Product List</h1>
         @foreach (var product in Model.Products)
         {
+            <a href="~/Product/Index/">@product.Name</a>
             <p> @product.Name</p>
             <hr />
         }

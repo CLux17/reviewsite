@@ -17,13 +17,13 @@ namespace reviewsite.Controllers
             this.productRepo = productRepo;
         }
 
-        public ViewResult Index()
+        public ViewResult Details()
         {
             var model = productRepo.GetAll();
             return View(model);
         }
 
-        public ViewResult Details(int id)
+        public ViewResult Index(int id)
         {
             var model = productRepo.GetById(id);
             return View(model);

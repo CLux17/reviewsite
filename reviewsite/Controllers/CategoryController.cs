@@ -8,10 +8,7 @@ using System.Threading.Tasks;
 
 namespace reviewsite.Controllers
 {
-
-
     public class CategoryController : Controller
-    
     {
         IRepository<Category> categoryRepo;
 
