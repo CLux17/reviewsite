@@ -13,6 +13,6 @@ namespace reviewsite.Model
         public string Content { get; set; }
         public int CategoryId { get; set; }
 
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

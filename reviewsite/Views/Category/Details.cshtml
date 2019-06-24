@@ -1,4 +1,4 @@
-﻿@model reviewsite.Model.Product
+﻿@model reviewsite.Model.Category
 
 
 @{
@@ -14,7 +14,6 @@
     <title>Details</title>
 </head>
 <body>
-    @foreach (var product in Model)
     <header>
         <h1>@Model.Name </h1>
         <section id="offWhite">
@@ -22,17 +21,13 @@
         </section>
     </header>
     <main>
-        <section id="airMax">
-            <img src="~/images/@Model.Image" alt="Alternate Text" />
-            <p></p>
-            <ul>
-                <li>@Model.Category</li>
-                <li>@Model.Description</li>
-            </ul>
+        <h1>Product List</h1>
+        @foreach (var product in Model.Products)
+        {
+            <p> @product.Name</p>
             <hr />
-            <p>@Model.Review</p>
-            @*This needs to be product but it errored out and I don't want to get into that over the weekend'*@
-        </section>
+        }
+
     </main>
 </body>
 </html>

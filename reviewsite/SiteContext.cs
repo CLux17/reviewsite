@@ -16,8 +16,8 @@ namespace reviewsite
         {
             var connectionString = "Server=(localdb)\\mssqllocaldb;Database=aajcreviewsiteDb;Trusted_Connection=True;";
 
-            optionsBuilder.UseSqlServer(connectionString);
-                          //.UseLazyLoadingProxies();
+            optionsBuilder.UseSqlServer(connectionString)
+                          .UseLazyLoadingProxies();
 
             
 
