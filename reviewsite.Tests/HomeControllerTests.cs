@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace reviewsite.Tests
 {
-    public class HomeControllerTests
+    public class CateogryControllerTests
     {
         [Fact]
         public void Index_Returns_A_View()
         {
-            //var underTest = new HomeController();
+            //var underTest = new CategoryController();
 
             //var result = underTest.Index();
 
@@ -22,7 +22,7 @@ namespace reviewsite.Tests
         [Fact]
         public void Details_Returns_A_View()
         {
-            //var undertest = new HomeController();
+            //var undertest = new CategoryController();
 
             //var result = undertest.Details(1);
 

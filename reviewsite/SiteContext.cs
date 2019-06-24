@@ -17,7 +17,10 @@ namespace reviewsite
             var connectionString = "Server=(localdb)\\mssqllocaldb;Database=aajcreviewsiteDb;Trusted_Connection=True;";
 
 
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(connectionString)
+                          .UseLazyLoadingProxies();
+
+            
 
             base.OnConfiguring(optionsBuilder);
         }
@@ -47,7 +50,6 @@ namespace reviewsite
                     Review = "The shoe is the last one of Virgil's Off-White collab for the Air Max 90's and is probably the best design he has to date. They are not true to size and seem to run a half size smaller. The upper's are wonderfully designed, the lower portion in my eye's is where they really shine at. As with all of his Off-White creations as of late, the added print is very reminiscent of Andy Warhol, and I dig it. As far as paying retail for these shoes, they are awesome, but I wouldn't recommend paying resale pricing unless you are okay with wearing shoes that near the thousand dollar mark.",
                     CategoryId = 1
                 },
-
 
                 new Product()
                 {
