@@ -21,12 +21,12 @@ namespace reviewsite.Repositories
 
         public IEnumerable<Product> GetAll()
         {
-            throw new NotImplementedException(); //return //productList.ToList();
+            return db.Products.ToList();
         }
 
         public Product GetById(int id)
         {
-            throw new NotImplementedException(); //return productList.Single(c => c.Id == id);
+            return db.Products.Single(c => c.Id == id);
         }
 
 
