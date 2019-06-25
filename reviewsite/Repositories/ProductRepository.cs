@@ -29,11 +29,7 @@ namespace reviewsite.Repositories
             return db.Products.Single(c => c.Id == id);
         }
 
-        public void Create(Review review)
-        {
-            db.Reviews.Add(review);
-            db.SaveChanges();
-        }
+       
 
 
     }
