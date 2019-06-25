@@ -15,3 +15,7 @@ h2{
     background-color: hotpink;
     border-radius: 60%;
 }
+.a href{
+    display:flex;
+    justify-content:flex-end;
+}
