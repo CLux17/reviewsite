@@ -29,7 +29,10 @@ namespace reviewsite.Repositories
             return db.Products.Single(c => c.Id == id);
         }
 
-       
+        public void Create(Product obj)
+        {
+            throw new NotImplementedException();
+        }
 
 
     }

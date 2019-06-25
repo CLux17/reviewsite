@@ -15,7 +15,7 @@ namespace reviewsite.Repositories
         {
             this.db = db;
         }
-
+        
         public IEnumerable<Category> GetAll()
         {
             return db.Categories.ToList();
@@ -25,5 +25,11 @@ namespace reviewsite.Repositories
         {
             return db.Categories.Single(c => c.Id == id);
         }
+
+        public void Create(Category obj)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
