@@ -28,7 +28,7 @@ namespace reviewsite
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
+            {//test
                 app.UseDeveloperExceptionPage();
             }
 
