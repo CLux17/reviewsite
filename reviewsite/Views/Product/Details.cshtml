@@ -1,4 +1,5 @@
 ﻿@model reviewsite.Model.Product
+@addTagHelper *, Microsoft.AspNetCore.MVC.TagHelpers 
 
 
 @{
@@ -41,17 +42,16 @@
         <div class="row">
             <div class="col-md-4">
                 <form asp-action="Create">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    
+                    <div asp-validation-summary="ModelOnly" class="text-danger">
+                    </div>                    
                     <div class="form-group">
-                        <label asp-for="Description" class="control-label"></label>
-                        <input asp-for="Description" class="form-control" />
+                        <label asp-for="Content" class="control-label"></label>
+                        <input asp-for="Content" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label asp-for="InstructorId" class="control-label">Product being reviewed:</label>
-                        <select name="InstructorId">
-                            <option value="@Model.Id">@Model.Name</option>
-                            
+                        <label asp-for="ProductId" class="control-label">Product being reviewed:</label>
+                        <select name="ProductId">
+                            <option value="@Model.Id">@Model.Name</option>                            
                         </select>
                     </div>
                     <div class="form-group">
