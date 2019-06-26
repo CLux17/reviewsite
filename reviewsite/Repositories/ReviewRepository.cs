@@ -29,5 +29,10 @@ namespace reviewsite.Repositories
             db.Reviews.Add(review);
             db.SaveChanges();
         }
+        public void Delete(Review review)
+        {
+            db.Reviews.Remove(review);
+            db.SaveChanges();
+        }
     }
 }

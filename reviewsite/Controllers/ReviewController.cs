@@ -28,7 +28,20 @@ namespace reviewsite.Controllers
         public ActionResult Create(Review review)
         {
             reviewRepo.Create(review);
-            return RedirectToAction("~/Product/Details/ProductId");
+            return RedirectToAction("../Product/Details/"+review.ProductId);
+        }
+        [HttpGet]
+        public ViewResult Delete(int id)
+        {
+            ViewBag.ReviewId = id;
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Delete(Review review)
+        {
+            reviewRepo.Delete(review);
+            return RedirectToAction("../Product/Details/" + review.ProductId);
         }
 
     }

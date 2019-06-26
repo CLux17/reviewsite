@@ -31,5 +31,9 @@ namespace reviewsite.Repositories
             throw new NotImplementedException();
         }
 
+        public void Delete(Category obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

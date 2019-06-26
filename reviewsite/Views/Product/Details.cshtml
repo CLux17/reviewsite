@@ -35,6 +35,7 @@
             @foreach (var review in Model.Reviews)
             {
                 @review.Content
+                <a href="/Review/Delete/@review.ReviewId">Delete this Review</a>
                 <hr />
             }
         </section>
