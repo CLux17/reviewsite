@@ -18,8 +18,9 @@ namespace reviewsite.Controllers
         }
 
         [HttpGet]
-        public ViewResult Create()
+        public ViewResult Create(int id)
         {
+            ViewBag.ProductId = id;
             return View();
         }
 
