@@ -30,6 +30,7 @@ namespace reviewsite.Controllers
             reviewRepo.Create(review);
             return RedirectToAction("../Product/Details/"+review.ProductId);
         }
+
         [HttpGet]
         public ViewResult Delete(int id)
         {

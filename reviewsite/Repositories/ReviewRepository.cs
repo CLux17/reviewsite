@@ -19,9 +19,9 @@ namespace reviewsite.Repositories
             return db.Reviews.ToList();
         }
 
-        public Review GetById(int id)
+        public Review GetById(int Reviewid)
         {
-            return db.Reviews.Single(c => c.ReviewId == id);
+            return db.Reviews.Single(c => c.ReviewId == Reviewid);
         }
         
         public void Create(Review review)
