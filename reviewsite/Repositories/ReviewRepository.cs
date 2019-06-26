@@ -21,12 +21,12 @@ namespace reviewsite.Repositories
 
         public Review GetById(int id)
         {
-            return db.Reviews.Single(c => c.Id == id);
+            return db.Reviews.Single(c => c.ReviewId == id);
         }
-
+        
         public void Create(Review review)
         {
-             db.Reviews.Add(review);
+            db.Reviews.Add(review);
             db.SaveChanges();
         }
     }

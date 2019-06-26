@@ -32,12 +32,12 @@ namespace reviewsite
                 {
                     Id = 1,
                     Name = "Shoes",
-
+                    
                 },
                 new Category()
                 {
-                    Id = 2,
-                    Name = "Drinks",
+                    Id=2,
+                    Name="Drinks",
                 }
             );
             modelBuilder.Entity<Product>().HasData(
@@ -64,7 +64,7 @@ namespace reviewsite
                     Id = 3,
                     Name = "Cold Brew Coffee",
                     Description = "Coffee was first brought to the country of Brazil, by a man named Francisco de Melo Palheta, in 1727. He planted the first coffee tree in the state of Para and it thrived and made a easy transition to Rio de Janeiro by 1770. There are two types of beans that are used for production in Brazil. The first bean is called the robusta bean, the second is called the arabica bean. The majority of the coffee grown in Brazil is located in the southern portion of the country. Arabica is known to be the better tasting bean of the two types, and is also the majority in annual production at 80%. Brazil as a country has a annual production rate of 7.9 billion pounds, as of 2018 records. America is the leading country of coffee consumption at 400 million cup's per day. At this rate, coffee is not going anywhere but up, in the United States anytime soon.",
-                    Image = "coffee.jpg",
+                    Image ="coffee.jpg",
                     CategoryId = 2
                 },
 
@@ -81,31 +81,29 @@ namespace reviewsite
             modelBuilder.Entity<Review>().HasData(
                 new Review()
                 {
-                    Id = 1,
+                    ReviewId = 1,
                     Content = "The shoe is the last one of Virgil's Off-White collab for the Air Max 90's and is probably the best design he has to date. They are not true to size and seem to run a half size smaller. The upper's are wonderfully designed, the lower portion in my eye's is where they really shine at. As with all of his Off-White creations as of late, the added print is very reminiscent of Andy Warhol, and I dig it. As far as paying retail for these shoes, they are awesome, but I wouldn't recommend paying resale pricing unless you are okay with wearing shoes that near the thousand dollar mark.",
                     ProductId = 1,
                 },
                 new Review()
                 {
-                    Id = 2,
+                    ReviewId = 2,
                     Content = "The shoe is as beautiful as it looks on the site. It's does run small so, I would recommend a 1/2 size up. As long as you're used to wearing heels they are good for an all night wear. Perfect for a dramatic night on the town or an elegant night out. Would I recommend this shoe? Absolutely!",
                     ProductId = 2,
                 },
                 new Review()
                 {
-                    Id = 3,
+                    ReviewId = 3,
                     Content = "Coffee? yes. Iced or Cold brew coffee? Even better. This stuff right here? The best there is, hands down, nothing else wakes me up faster than this.",
                     ProductId = 3,
                 },
                 new Review()
                 {
-                    Id = 4,
+                    ReviewId = 4,
                     Content = "Feel it withing 15 minutes of drinkning it, fantastic for body building and tastes GREAT!!!!",
                     ProductId = 4,
-                });
-
-            
-            
+                }
+            );
         }
 
     }

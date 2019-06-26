@@ -28,7 +28,7 @@ namespace reviewsite.Controllers
         public ActionResult Create(Review review)
         {
             reviewRepo.Create(review);
-            return RedirectToAction("~/Product/Details/Model.productId");
+            return RedirectToAction("~/Product/Details/ProductId");
         }
 
     }
