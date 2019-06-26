@@ -26,7 +26,7 @@ namespace reviewsite.Repositories
 
         public void Create(Review review)
         {
-            db.Reviews.Add(review);
+             db.Reviews.Add(review);
             db.SaveChanges();
         }
     }

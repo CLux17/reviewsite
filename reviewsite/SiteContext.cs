@@ -32,12 +32,12 @@ namespace reviewsite
                 {
                     Id = 1,
                     Name = "Shoes",
-                    
+
                 },
                 new Category()
                 {
-                    Id=2,
-                    Name="Drinks",
+                    Id = 2,
+                    Name = "Drinks",
                 }
             );
             modelBuilder.Entity<Product>().HasData(
@@ -64,7 +64,7 @@ namespace reviewsite
                     Id = 3,
                     Name = "Cold Brew Coffee",
                     Description = "Coffee was first brought to the country of Brazil, by a man named Francisco de Melo Palheta, in 1727. He planted the first coffee tree in the state of Para and it thrived and made a easy transition to Rio de Janeiro by 1770. There are two types of beans that are used for production in Brazil. The first bean is called the robusta bean, the second is called the arabica bean. The majority of the coffee grown in Brazil is located in the southern portion of the country. Arabica is known to be the better tasting bean of the two types, and is also the majority in annual production at 80%. Brazil as a country has a annual production rate of 7.9 billion pounds, as of 2018 records. America is the leading country of coffee consumption at 400 million cup's per day. At this rate, coffee is not going anywhere but up, in the United States anytime soon.",
-                    Image ="coffee.jpg",
+                    Image = "coffee.jpg",
                     CategoryId = 2
                 },
 
@@ -102,8 +102,10 @@ namespace reviewsite
                     Id = 4,
                     Content = "Feel it withing 15 minutes of drinkning it, fantastic for body building and tastes GREAT!!!!",
                     ProductId = 4,
-                }
-            );
+                });
+
+            
+            
         }
 
     }
