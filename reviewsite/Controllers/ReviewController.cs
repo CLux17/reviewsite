@@ -34,15 +34,16 @@ namespace reviewsite.Controllers
         [HttpGet]
         public ViewResult Delete(int id)
         {
-            ViewBag.ReviewId = id;
-            return View();
+            ViewBag.ProductId = id;
+            var model = reviewRepo.GetById(id);
+            return View(model);
         }
 
         [HttpPost]
         public ActionResult Delete(Review review)
         {
             reviewRepo.Delete(review);
-            return RedirectToAction("../Product/Details/" + review.ProductId);
+            return RedirectToAction("../Product/Details/"+review.ProductId);
         }
 
     }
