@@ -15,15 +15,15 @@
 <body>
     <h1>AAJC Reviews</h1>
     <h2>Categories</h2>
-    <h5>
+    
     @foreach (var category in Model)
     {
     
-    <a href="~/Category/Details/@category.Id">@category.Name</a>
-        @*<hr />*@
+        <a href="~/Category/Details/@category.Id">@category.Name</a>
+        <hr/>
     }
-   </h5>
 </body>
+   
 </html>
 <footer>
     &copy; AAJC REVIEWS 2019
