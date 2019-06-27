@@ -55,9 +55,9 @@ namespace reviewsite.Tests
         public void Details_Passes_Category_To_View()
         {
             var expectedCategory = new Category();
-            categoryRepo.GetById(1).Returns(expectedCategory);
+            categoryRepo.GetById(10).Returns(expectedCategory);
 
-            var result = underTest.Details(1);
+            var result = underTest.Details(10);
 
             Assert.Equal(expectedCategory, result.Model);
         }

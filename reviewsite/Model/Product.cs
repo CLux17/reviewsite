@@ -17,10 +17,12 @@ namespace reviewsite.Model
 
         public virtual List<Review> Reviews { get; set; }
 
+        //    public Product(int id, string name, string description, string image, int categoryId)
+        //    {
+        //        Name = name;
+        //        Description = description;
+        //        Image = image;
+        //    }
         
-
-
-
-
     }
 }
