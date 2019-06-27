@@ -38,5 +38,10 @@ namespace reviewsite.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public void Edit(Product obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

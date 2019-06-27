@@ -23,15 +23,34 @@ namespace reviewsite.Repositories
         {
             return db.Reviews.Single(c => c.ReviewId == Reviewid);
         }
-        
+
+
+
+
+
         public void Create(Review review)
         {
             db.Reviews.Add(review);
             db.SaveChanges();
         }
+
+
+
+
+
         public void Delete(Review review)
         {
             db.Reviews.Remove(review);
+            db.SaveChanges();
+        }
+
+
+
+
+
+        public void Edit(Review review)
+        {
+            db.Reviews.Update(review);
             db.SaveChanges();
         }
     }

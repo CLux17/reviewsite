@@ -1,6 +1,7 @@
 ﻿@model reviewsite.Model.Review
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
+
 @{
     Layout = null;
 }
@@ -10,34 +11,38 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
+    <title>Edit Review</title>
 </head>
 <body>
 
-    <h1>Create Review</h1>
+    <h4>Review</h4>
     <hr />
     <div class="row">
         <div class="col-md-4">
-            <form asp-action="Create" method="post">
+            <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" value="@Model.ReviewId" asp-for="ReviewId" />
                 <div class="form-group">
                     <label asp-for="Content" class="control-label"></label>
                     <input asp-for="Content" class="form-control" />
                     <span asp-validation-for="Content" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input asp-for="ProductId" type="hidden" value="@ViewBag.ProductId" class="form-control" />
+                    <input type="hidden" value="@Model.ReviewId" asp-for="ReviewId" class="form-control" />
+                    <input type="hidden" value="@Model.ProductId" asp-for="ProductId" class="form-control" />
+                    @*<input type="hidden" value="@ViewBag.ProductId" asp-for="ProductId" />*@
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-default" />
+                    <input type="submit" value="Save" class="btn btn-default" />
                 </div>
             </form>
         </div>
     </div>
 
     <div>
-        <a href="~/Product/Details/@ViewBag.ProductId">Return to Previous Menu</a>
+        <a href="~/Product/Details/@Model.ProductId">Return to Previous Menu</a>
     </div>
+
 
 </body>
 </html>
