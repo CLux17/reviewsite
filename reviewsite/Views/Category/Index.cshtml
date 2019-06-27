@@ -15,11 +15,14 @@
 <body>
     <h1>AAJC Reviews</h1>
     <h2>Categories</h2>
+    <h5>
     @foreach (var category in Model)
     {
+    
     <a href="~/Category/Details/@category.Id">@category.Name</a>
-        <hr />
+        @*<hr />*@
     }
+   </h5>
 </body>
 </html>
 <footer>
