@@ -1,40 +1,45 @@
-﻿*{
+﻿body {
     background-image: url('../images/Groundbreak.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-    /*text-decoration-color: aliceblue;*/
+    color: gray;
     text-align: center;
-    font: sans serif;
-    
+    font-family: Rod;
 }
 
 h1 {
     font-size: 30px;
-    padding: 2em 2em;   
+    padding: 2em 2em;
+    background-color: rgba(207, 206, 206, 0.356);
     display: flex;
     justify-content: center;
-   
 }
-h2{
+
+}
+h2 {
     font-size: 20px;
-    padding:1em 1em;
+    padding: 1em 1em;
     background-color: hotpink;
     border-radius: 60%;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 
+    animation: mymove 5s infinite;*/
 }
 
-
-input{
-    border:5px;
-    border-color: green;
-    
-}
-
-footer{
-    color: white;
+.a href {
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-    padding-top: 1.5em;
-    min-height: 2em;
+    justify-content: flex-end;
+}
+
+    .a href a:hover {
+        text-shadow: 16px;
+        color: white;
+    }
+
+
+
+mymove{
+    
+        box-shadow: 10px 20px 30px rgb(255, 196, 0);
+    
 }

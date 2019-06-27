@@ -28,8 +28,8 @@
             <p></p>
             <h3>@Model.Category.Name</h3>
             <h4>@Model.Description</h4>
-            <hr />
             <h2>Review List</h2>
+            <hr />
             @foreach (var review in Model.Reviews)
             {
                 @review.Content
