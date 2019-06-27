@@ -30,7 +30,7 @@
         
         <form asp-action="Delete">
             <input type="hidden" value="@Model.ReviewId" asp-for="ReviewId" />
-            <input type="hidden" value="@Model.ProductId" asp-for="ProductId" />
+            <input type="hidden" value="@Model.ProductId" asp-for="ProductId" />           
             <input type="submit" value="Delete" class="btn btn-default" /> |
         </form>
         <a href="~/Product/Details/@Model.ProductId">Return to Previous Menu</a>
