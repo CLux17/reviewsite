@@ -10,10 +10,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="~/CSS/StyleSheet.css">
     <meta name="viewport" content="width=device-width" />
-    <title>Product by Category</title>
+    <title>AAJC Reviews</title>
 </head>
 <body>
-    <h1>Category List</h1>
+    <h1>AAJC Reviews</h1>
+    <h2>Categories</h2>
     @foreach (var category in Model)
     {
     <a href="~/Category/Details/@category.Id">@category.Name</a>
@@ -21,3 +22,6 @@
     }
 </body>
 </html>
+<footer>
+    &copy; AAJC REVIEWS 2019
+</footer>

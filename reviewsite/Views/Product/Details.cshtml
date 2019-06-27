@@ -26,10 +26,8 @@
         <section id="airMax">
             <img src="~/images/@Model.Image" alt="Alternate Text" />
             <p></p>
-            <ul>
-                <li>@Model.Category.Name</li>
-                <li>@Model.Description</li>
-            </ul>
+                <h3>@Model.Category.Name</h3>
+                <h4>@Model.Description</h4>
             <hr />
             <h2>Review List</h2>
             @foreach (var review in Model.Reviews)
@@ -41,7 +39,7 @@
             }
         </section>
         <a href="~/Review/Create/@Model.Id">Add a Review</a>
-        <a href="~/Category/Details/@Model.Category.Id">Return to Previous Menu</a>
+        <a href="~/Category/Details/@Model.Category.Id">Return to Products</a>
     </main>
 </body>
 </html>
