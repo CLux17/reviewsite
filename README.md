@@ -12,7 +12,7 @@
   </p>
 
 <h3>Creating a Review</h3>
-<p><span>Once you have navigated to a product and have read the review, you will be able to create a review for the product. Start by clicking the "Add a Review" at the bottom of the page.</span>
+<p><span>Once you have navigated to a product and have read the details of the product, you will be able to create a review for the product. Start by clicking the "Add a Review" at the bottom of the page.</span>
   
   <span>Once you have clicked on the link, the app will take you to a page where you can type your review into the box on the page. Once you have finished your review, you can clike the "Create" button to subbmit your review, and the app will take you back to the product page as to look over your contribution to the product along side everyone elses. If you decide not to create your review after all, simply click the "Return to Previous Menu" link to go back to the product page.</span>
 </p>
@@ -20,7 +20,7 @@
 <h3>Edit a Review</h3>
 <p><span>Lets say you misspelled your review, and you dont want to look like a fool on the internet for everyone to see! That is where our "Edit Review" link comes in handy.</span>
   
-  <span>First, locate the review in question you wish to edit. Next, click on the "Edit Review" link next to the review. This will navigate you to another page with your review in a text box, allowing you to edit the review to your hearts content. Fix that spelling error, expand upon your original thought, or any kind of edit you make to the review will be saved once you click the "Save" Button, at which point you will be brought back to the Product page to once again, view your review along side everyone elses on the page.</span>
+  <span>First, locate the review in question you wish to edit. Next, click on the "Edit Review" link next to the review. This will navigate you to another page with your review in a text box, allowing you to edit the review to your hearts content. Fix that spelling error, expand upon your original thought, or any kind of edit you make to the review will be saved once you click the "Save" Button, at which point you will be brought back to the Product page to once again, view your review along side everyone elses on the page. Dont want to Change perfection? Just click on the "Return to Previous Menu" link to bring you back to the products page.</span>
 </p>
 
 <h3>Delete a Review</h3>
