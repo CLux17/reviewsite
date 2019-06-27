@@ -18,7 +18,6 @@ namespace reviewsite.Repositories
             this.db = db;
         }
 
-
         public IEnumerable<Product> GetAll()
         {
             return db.Products.ToList();

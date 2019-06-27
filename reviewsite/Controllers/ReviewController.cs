@@ -17,13 +17,6 @@ namespace reviewsite.Controllers
             this.reviewRepo = reviewRepo;
         }
 
-
-
-
-
-
-
-
         [HttpGet]
         public ViewResult Create(int id)
         {
@@ -37,13 +30,6 @@ namespace reviewsite.Controllers
             reviewRepo.Create(review);
             return RedirectToAction("../Product/Details/"+review.ProductId);
         }
-
-
-
-
-
-
-
 
         [HttpGet]
         public ViewResult Delete(int id)
@@ -60,18 +46,9 @@ namespace reviewsite.Controllers
             return RedirectToAction("../Product/Details/"+review.ProductId);
         }
 
-
-
-
-
-
-
-
-
         [HttpGet]
         public ViewResult Edit(int id)
         {
-            //ViewBag.ProductId = id;
             var model = reviewRepo.GetById(id);
             return View(model);
         }

@@ -8,7 +8,6 @@ namespace reviewsite.Repositories
 {
     public class CategoryRepository : IRepository<Category>
     {
-
         private SiteContext db;
 
         public CategoryRepository(SiteContext db)

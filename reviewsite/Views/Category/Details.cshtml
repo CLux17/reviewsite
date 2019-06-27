@@ -17,7 +17,6 @@
     <header>
         <h1>@Model.Name </h1>
         <section id="offWhite">
-            
         </section>
     </header>
     <main>
@@ -25,7 +24,6 @@
         @foreach (var product in Model.Products)
         {
             <a href="~/Product/Details/@product.Id">@product.Name</a>
-            
             <hr />
         }
             <a href="~/Category/Index/">Return</a>

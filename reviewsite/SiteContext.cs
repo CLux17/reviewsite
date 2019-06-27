@@ -20,8 +20,6 @@ namespace reviewsite
             optionsBuilder.UseSqlServer(connectionString)
                           .UseLazyLoadingProxies();
 
-            
-
             base.OnConfiguring(optionsBuilder);
         }
 
@@ -32,14 +30,15 @@ namespace reviewsite
                 {
                     Id = 1,
                     Name = "Shoes",
-                    
                 },
+
                 new Category()
                 {
                     Id=2,
                     Name="Drinks",
                 }
             );
+
             modelBuilder.Entity<Product>().HasData(
                 new Product()
                 {
@@ -78,6 +77,7 @@ namespace reviewsite
                 }
 
             );
+
             modelBuilder.Entity<Review>().HasData(
                 new Review()
                 {
@@ -105,6 +105,5 @@ namespace reviewsite
                 }
             );
         }
-
     }
 }
